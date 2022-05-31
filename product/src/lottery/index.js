@@ -810,8 +810,9 @@ function createHighlight() {
     xoffset = 1,
     yoffset = 1,
     highlight = [];
-
+  // In case year = 2022
   year.split("").forEach(n => {
+    // first n = 2
     highlight = highlight.concat(
       NUMBER_MATRIX[n].map(item => {
         return `${item[0] + xoffset}-${item[1] + yoffset}`;
